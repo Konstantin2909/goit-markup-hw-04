@@ -66,6 +66,7 @@ ol {
 body {
   font-family: var(--font-main);
   color: var(--font-main);
+  width: 1600px;
 }
 
 /* ----------HEADER---------- */
@@ -156,11 +157,11 @@ body {
 
 .hero { 
   background-color: #88898D;
+  /* width: 1600px; */
   background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center ;
   padding: 200px 0 200px 0;
-  margin: 0;
 }
 .hero-text {
   width: 696px;
@@ -187,6 +188,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  border-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -280,12 +282,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .our-text-block {
-  padding: 30px 50px;
+  padding: 30px 32px;
 }
 .our-name {
   margin: 0 0 10px 0;
   text-align: center;
-  font-weight: 500;
   line-height: calc(19 / 16);
 }
 .our-specialty {
@@ -298,33 +299,34 @@ body {
   color: #757575; 
 }
 .social-flx {
-  margin: 0;
-  bottom: 0;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   gap: 10px;
 }
-.social-item {
-  margin: 0;
-  padding: 0;
+.social-link {
+  padding: 12px;
+  display: block;
+  align-items: center;
+  align-content: center;
   width: 44px;
   height: 44px;
-  border: 1px solid #6979b4;
-  border-radius: 22px;
-}
-.social-link {
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: .2s;
+} 
+.social-icon {
+  margin: auto;
   width: 20px;
   height: 20px;
-  fill: inherit;
-  transition: .2s;
-}
-.social-icon {
-  
+  fill: #AFB1B8;
 }
 .social-link:hover,
-.social-link:focus {
-  background-color: #188ce8;
-  fill:  #ffffff;
+.social-link:focus,
+.social-icon:hover,
+.social-icon:focus {
+  background-color: #2196F3;
+  fill: #ffffff; 
 }
 .regular {
   padding-top: 94px;
@@ -343,16 +345,33 @@ body {
   align-items: stretch;
   gap: 30px;
 }
-.regular-box {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.regular-link {
+  padding: 16px 32px 16px 32px;
+  display: block;
+  align-items: center;
+  align-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+  background-color: #ffffff;
+  transition: .2s;
+}  
+.regular-icon {
+  margin: auto;
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
 }
-
+.regular-link:hover,
+.regular-link:focus {
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+}
+.regular-icon:hover,
+.regular-icon:focus {
+  fill: #2196F3;
+}
 
 /* ----------FOOTER---------- */
 
@@ -409,6 +428,31 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.social-link-footer {
+  padding: 12px;
+  display: block;
+  align-items: center;
+  align-content: center;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: #575860;
+  transition: .2s;
+} 
+.social-icon-footer {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.social-link-footer:hover,
+.social-link-footer:focus,
+.social-icon-footer:hover,
+.social-icon-footer:focus {
+  background-color: #188ce8;
+  fill: #ffffff;
+}
 /* --------------------PORTFOLIO-------------------- */
 /* --------------------PORTFOLIO-------------------- */
 /* --------------------PORTFOLIO-------------------- */
@@ -438,13 +482,16 @@ body {
   margin: 0 8px;
   padding: 6px 22px;
   color: #212121;
+  border-style: none;
   background-color: #F5F4FA;
-  border: 2px solid #F5F4FA;;
+  border: 2px solid inherit;
 }
 .btn-flr:hover,
 .btn-flr:focus {
   color: #FFFFFF;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .portfolio-projects {
@@ -455,17 +502,9 @@ body {
   margin: 0;
   padding: 0;
 }
-.portfolio-project-1,
-.portfolio-project-2,
-.portfolio-project-3,
-.portfolio-project-4,
-.portfolio-project-5,
-.portfolio-project-6,
-.portfolio-project-7,
-.portfolio-project-8,
-.portfolio-project-9 {
-  margin: 0;
-  padding: 0;
+.portfolio-project-box:hover,
+.portfolio-project-box:focus {
+  box-shadow: 0 10px 10px 0 #EEEEEE;
 }
 .portfolio-border {
   margin: 0;
