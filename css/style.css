@@ -315,6 +315,7 @@ body {
   border: none;
   border-radius: 50%;
   transition: .2s;
+  fill: #AFB1B8;
 }
 .social-icon {
   display: flex;
@@ -322,10 +323,11 @@ body {
   align-items: center;
   width: 20px;
   height: 20px;
-  fill: #AFB1B8;
 }
 .social-link:hover,
-.social-link:focus {
+.social-link:focus,
+.social-icon:hover,
+.social-icon:focus {
   background-color: #2196F3;
   fill: #ffffff;
 }
@@ -353,19 +355,19 @@ body {
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
+  fill: #AFB1B8;
   border-radius: 4px;
-  background-color: #ffffff;
   transition: .2s;
 }  
 .regular-icon {
   margin: auto;
   width: 106px;
   height: 60px;
-  fill: #AFB1B8;
 }
 .regular-link:hover,
 .regular-link:focus {
   border: 1px solid #2196F3;
+  fill: #2196F3;
   border-radius: 4px;
 }
 
