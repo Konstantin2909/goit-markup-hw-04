@@ -66,7 +66,7 @@ ol {
 body {
   font-family: var(--font-main);
   color: var(--font-main);
-  width: 1600px;
+  /* width: 1600px; */
 }
 
 /* ----------HEADER---------- */
@@ -124,6 +124,8 @@ body {
   gap: 50px;
 }
 .header-text-2 {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -141,7 +143,6 @@ body {
   display: inline-block;
   content: "";
   fill: currentColor;
-  align-items: center;
   margin: 0 10px 0 0;
 }
 .mail-icon {
@@ -156,12 +157,13 @@ body {
 /* ----------MAIN---------- */
 
 .hero { 
-  background-color: #88898D;
-  /* width: 1600px; */
-  background-image: url(../images/hero.jpg);
+  background-color: #C4C4C4;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center ;
   padding: 200px 0 200px 0;
+  margin: 0 auto;
 }
 .hero-text {
   width: 696px;
@@ -305,28 +307,27 @@ body {
 }
 .social-link {
   padding: 12px;
-  display: block;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  align-content: center;
   width: 44px;
   height: 44px;
   border: none;
   border-radius: 50%;
-  background-color: #ffffff;
   transition: .2s;
-} 
+}
 .social-icon {
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
 }
 .social-link:hover,
-.social-link:focus,
-.social-icon:hover,
-.social-icon:focus {
+.social-link:focus {
   background-color: #2196F3;
-  fill: #ffffff; 
+  fill: #ffffff;
 }
 .regular {
   padding-top: 94px;
@@ -346,10 +347,9 @@ body {
   gap: 30px;
 }
 .regular-link {
-  padding: 16px 32px 16px 32px;
-  display: block;
+  display: flex;
   align-items: center;
-  align-content: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #AFB1B8;
@@ -367,10 +367,6 @@ body {
 .regular-link:focus {
   border: 1px solid #2196F3;
   border-radius: 4px;
-}
-.regular-icon:hover,
-.regular-icon:focus {
-  fill: #2196F3;
 }
 
 /* ----------FOOTER---------- */
@@ -479,10 +475,11 @@ body {
   line-height: calc(26 / 16);
   letter-spacing: 0.06em;
   cursor: pointer;
-  margin: 0 8px;
+  margin: 0 4px;
   padding: 6px 22px;
   color: #212121;
   border-style: none;
+  border-radius: 4px;
   background-color: #F5F4FA;
   border: 2px solid inherit;
 }
@@ -490,7 +487,8 @@ body {
 .btn-flr:focus {
   color: #FFFFFF;
   background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
   border-radius: 4px;
 }
 
